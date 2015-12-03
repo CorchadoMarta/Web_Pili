@@ -1,0 +1,89 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,700);
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	background: -webkit-linear-gradient(rgb(19, 28, 78) , rgb(30, 55, 131)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient( rgb(19, 28, 78), rgb(30, 55, 131)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient( rgb(19, 28, 78), rgb(30, 55, 131)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to rgb(19, 28, 78) , rgb(30, 55, 131)); /* Standard syntax */
+	color: #74777b;
+	font-size: 1em;
+	font-family: 'Raleway', Arial, sans-serif;
+}
+
+a {
+	color: rgb(255, 141, 106);
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #74777b;
+}
+
+.hidden {
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	opacity: 0;
+}
+
+.container > section {
+	padding: 5em 0;
+	font-size: 1.25em;
+	min-height: 100%;
+}
+
+p {
+	text-align: center;
+	padding: 1em;
+}
+
+/* Related demos */
+.related {
+	text-align: center;
+}
+
+.related > a {
+	width: calc(100% - 20px);
+	max-width: 340px;
+	border: 1px solid black;
+	border-color: initial;
+	display: inline-block;
+	text-align: center;
+	margin: 20px 10px;
+	padding: 25px;
+}
+
+.related a img {
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.related a:hover img,
+.related a:active img {
+	opacity: 1;
+}
+
+.related a h3 {
+	margin: 0;
+	padding: 0.5em 0 0.3em;
+	max-width: 300px;
+	text-align: left;
+}
+
+@media screen and (max-width: 1280px) {
+	.support {
+		padding: 0 1.5em;
+	}
+}
+
+@media screen and (max-width: 30em) {
+	.container > section {
+		padding: 3em 0;
+	}
+}
